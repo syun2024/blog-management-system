@@ -23,7 +23,7 @@
                                     <a th:href="@{/blogs/{id}(id=${blog.id})}" th:text="${blog.title}" class="text-decoration-none">ブログタイトル</a>
                                 </h5>
                                 <p class="card-text">
-                                    <small class="text-muted">作成日: <span th:text="${#temporals.format(blog.createdAt, 'yyyy/MM/dd')}">作成日</span></small><br>
+                                    <small class="text-muted">作成日: <span th:text="${#temporals.format(blog.createAt, 'yyyy/MM/dd')}">作成日</span></small><br>
                                 </p>
                             </div>
                         </div>

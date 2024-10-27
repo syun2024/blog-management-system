@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Spring Boot",
+            "request": "launch",
+            "mainClass": "com.example.blog.BlogApplication",
+            "vmArgs": "--add-modules java.base",
+            "javaExec": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java"
+        }
+    ]
+}

@@ -16,7 +16,7 @@
                         <h1 class="card-title" th:text="${blog.title}">ブログタイトル</h1>
                         <p class="card-text" th:text="${blog.content}">ブログコンテンツ</p>
                         <div class="d-flex justify-content-between align-items-center mt-4">
-                            <p class="card-text mb-0"><strong>作成日:</strong> <span th:text="${#temporals.format(blog.createdAt, 'yyyy/MM/dd')}">作成日</span></p>
+                            <p class="card-text mb-0"><strong>作成日:</strong> <span th:text="${#temporals.format(blog.createAt, 'yyyy/MM/dd')}">作成日</span></p>
                             <div class="d-flex">
                                 <a th:href="@{/blogs/{id}/edit(id=${blog.id})}" class="btn btn-primary mb-2 mr-2">編集</a>
                                 <form th:action="@{/blogs/{id}/delete(id=${blog.id})}" method="post">
